@@ -34,7 +34,7 @@ def listen_to_command():
         print("You said: ", text)
         return text
     except speech_recognition.UnknownValueError:
-        assistant_voice("Sorry, I could not understand that.")
+        assistant_voice("Sorry, I could not understand your command.")
         command = listen_to_command()
     return command
 
